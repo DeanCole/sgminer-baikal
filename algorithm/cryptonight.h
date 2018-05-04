@@ -8,7 +8,7 @@ typedef struct _CryptonightCtx
 } CryptonightCtx;
 
 static inline int monero_variant(struct work *work) {
-  return (work->is_monero && work->data[0] >= 7) ? work->data[0] - 6 : 0;
+  return (work->is_monero && work->data[0] >= 6) ? work->data[0] - 5 : 0;
 }
 
 void cryptonight_regenhash(struct work *work);
